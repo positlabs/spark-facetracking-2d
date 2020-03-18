@@ -1,0 +1,16 @@
+const Patches = require('Patches')
+const R = require('Reactive')
+const D = require('Diagnostics')
+const FaceTracking2D = require('FaceTracking2D')
+const face = FaceTracking2D.face(0)
+
+Patches.setPoint2DValue('face2DPosition', R.point2d(face.boundingBox.x, face.boundingBox.y))
+Patches.setPoint2DValue('face2DSize', R.point2d(face.boundingBox.width, face.boundingBox.height))
+Patches.setPoint2DValue('face2DCenter', R.point2d(face.boundingBox.center.x, face.boundingBox.center.y))
+
+D.watch('x', face.boundingBox.x)
+D.watch('y', face.boundingBox.y)
+D.watch('width', face.boundingBox.width)
+D.watch('height', face.boundingBox.height)
+D.watch('centerX', face.boundingBox.center.x)
+D.watch('centerY', face.boundingBox.center.y)
