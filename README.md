@@ -2,9 +2,9 @@
 
 This project demonstrates the [Facetracking2D module](https://sparkar.facebook.com/ar-studio/learn/documentation/reference/classes/facetracking2dmodule) by drawing a bounding box on the user's face.
 
-[Demo on YouTube](https://youtu.be/)
+[Demo on YouTube](https://youtu.be/QE_4YmwNt2o)
 
-[![](./screenshot.jpg)](https://youtu.be/)
+[![](./screenshot.jpg)](https://youtu.be/QE_4YmwNt2o)
 
 
 ## Resources
