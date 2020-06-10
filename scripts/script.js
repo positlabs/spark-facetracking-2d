@@ -4,9 +4,9 @@ const D = require('Diagnostics')
 const FaceTracking2D = require('FaceTracking2D')
 const face = FaceTracking2D.face(0)
 
-Patches.setPoint2DValue('face2DPosition', R.point2d(face.boundingBox.x, face.boundingBox.y))
-Patches.setPoint2DValue('face2DSize', R.point2d(face.boundingBox.width, face.boundingBox.height))
-Patches.setPoint2DValue('face2DCenter', R.point2d(face.boundingBox.center.x, face.boundingBox.center.y))
+Patches.inputs.setPoint2D('face2DPosition', R.point2d(face.boundingBox.x, face.boundingBox.y))
+Patches.inputs.setPoint2D('face2DSize', R.point2d(face.boundingBox.width, face.boundingBox.height))
+Patches.inputs.setPoint2D('face2DCenter', R.point2d(face.boundingBox.center.x, face.boundingBox.center.y))
 
 D.watch('x', face.boundingBox.x)
 D.watch('y', face.boundingBox.y)
